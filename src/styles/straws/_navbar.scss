@@ -1,0 +1,9 @@
+.navbar-brand {
+    img {
+        height: 35px;
+
+        @include media-breakpoint-up(lg) {
+            height:50px;
+        }
+    }
+}

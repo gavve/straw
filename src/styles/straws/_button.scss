@@ -1,0 +1,14 @@
+@import "variables.scss";
+
+.btn-outline-primary {
+    border-color: $dark-color;
+    background-color: $dark-color;
+    color:white;
+    
+
+    &:hover, &:not(:disabled):not(.disabled):active, &:focus {
+        color: $dark-color;
+        border-color: white;
+        background-color: white;
+    }
+}

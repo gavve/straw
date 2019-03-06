@@ -1,0 +1,42 @@
+
+/**
+ *  Carousel overwrites
+ */
+
+ .carousel-inner,
+ .carousel-item {
+     max-height:700px;
+     
+     @include media-breakpoint-down(md) {
+         max-height: 100vh;
+     }
+ }
+
+ .carousel-item {
+
+    img {
+        
+    }
+ }
+
+ .carousel-caption {
+    position: absolute;
+    right: 100px;
+    left:unset;
+    bottom:unset;
+    top:50%;
+    transform:translateY(-50%);
+    z-index: 10;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #fff;
+    max-width:450px;
+
+    h1,h2,h3,h4,h5 {
+        text-shadow: 1px 1px 10px rgba(0,0,0,.5);
+    }
+
+    @media screen and (min-width:1600px) {
+        right:250px;
+    }
+}
