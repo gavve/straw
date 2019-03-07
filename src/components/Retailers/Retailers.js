@@ -22,7 +22,7 @@ let retailerData = [
 export default class Retailers extends Component {
   render() {
     return (
-      <section className="py-5">
+      <section className="py-5" id="retailers">
       <div className="container">
         <div className="row">
           <div className="col-12" style={{padding: "30px"}}>

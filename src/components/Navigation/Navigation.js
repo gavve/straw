@@ -13,17 +13,9 @@ let menuData = [
     title: 'About'
   },
   {
-    href: '#portfolio',
-    title: 'Portfolio'
+    href: '#retailers',
+    title: 'Retailers'
   },
-  {
-    href: '#services',
-    title: 'Services'
-  },
-  {
-    href: '#team',
-    title: 'Team'
-  }
 ];
 
 export default class Navigation extends Component {
