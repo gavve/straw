@@ -25,6 +25,7 @@ export default class Retailers extends Component {
       <section className="py-5">
       <div className="container">
         <div className="row">
+          <h1>Retailers</h1>
           {
             retailerData.map((retailer, idx) => {
               return <Retailer href={retailer.href} imgSrc={retailer.imgSrc} alt={retailer.altText} />
