@@ -16,17 +16,7 @@ let retailerData = [
     href: 'https://www.lekiosk.se/',
     imgSrc: 'https://shop.textalk.se/shop/28283/files/LeKiosklogga.jpg?max-width=600&max-height=150&quality=85',
     altText: 'Le Kiosk bamboo straws'
-  },
-  {
-    href: 'google.se',
-    imgSrc: '/retailers/hej.jpg',
-    altText: 'retailer google'
-  },
-  {
-    href: 'google.se',
-    imgSrc: '/retailers/hej.jpg',
-    altText: 'retailer google'
-  },
+  }
 ]
 
 export default class Retailers extends Component {

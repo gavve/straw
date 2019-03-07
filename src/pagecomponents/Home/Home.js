@@ -14,7 +14,6 @@ export default class Home extends Component {
         <Navigation />
         <Header />
         <About />
-        <PortfolioGrid />
         <Retailers />
       </div>
     )
