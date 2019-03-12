@@ -92,7 +92,7 @@ export default class Navigation extends Component {
         <nav className={classes} id="mainNav">
           <div className="container">
             <AnchorLink href="#page-top">
-              <a className="navbar-brand" href="#"><img src="/icons/wasteless.png" alt="WastelessCo" /></a>
+              <a className="navbar-brand" href="/"><img src="/icons/wasteless.png" alt="WastelessCo" /></a>
             </AnchorLink>
             
             <button className={hamburgerClasses} onClick={this.toggleMenu} type="button"  data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">

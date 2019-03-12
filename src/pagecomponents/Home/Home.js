@@ -2,9 +2,9 @@ import React, { Component } from 'react'
 
 import Navigation from '../../components/Navigation/Navigation';
 import Header from '../../components/Header/Header';
-import PortfolioGrid from '../../components/PortfolioGrid/PortfolioGrid';
 import About from '../../components/About/About';
 import Retailers from '../../components/Retailers/Retailers';
+import Footer from '../../components/Footer/Footer';
 
 
 export default class Home extends Component {
@@ -15,6 +15,7 @@ export default class Home extends Component {
         <Header />
         <About />
         <Retailers />
+        <Footer />
       </div>
     )
   }
