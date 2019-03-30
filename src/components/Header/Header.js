@@ -1,15 +1,19 @@
 import React, { Component } from 'react'
+import { connect } from 'react-redux'
+import { toggleModal } from '../../redux/actions/ui/uiActions'
+
 import CarouselItem from '../../components/CarouselItem/CarouselItem';
 
 const $ = window.$;
 
 let carouselData = [
-    {   
+    {
         'title': '100% Bamboo. </br> 100% Beautiful. </br> 100% Biodegradable Straws from Bali.',
         'buttonText': 'Order now',
         'imageUrl': '/carouselImages/wasteless-2.jpg',
         'active': true,
-        'href': ''
+        'href': '',
+        'modal':true,
     },
     {
         'title': 'We’re starting with a straw, but we have bigger things in mind! ',
@@ -27,8 +31,8 @@ let carouselData = [
     },
 ]
 
-export default class Header extends Component {
-  
+class Header extends Component {
+
   componentDidMount() {
     $('.carousel').carousel();
   }
@@ -63,3 +67,14 @@ export default class Header extends Component {
     )
   }
 }
+
+const mapStateToProps = (state, ownProps) => ({
+    ui: state.ui
+  })
+
+export default connect(
+  mapStateToProps,
+  {
+    toggleModal
+  }
+)(Header)
