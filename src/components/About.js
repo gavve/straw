@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-import TimelineList from '../TimelineList/TimelineList';
+import TimelineList from './TimelineList';
 
 
 let aboutData = [

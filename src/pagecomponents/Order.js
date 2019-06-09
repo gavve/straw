@@ -1,16 +1,12 @@
 import React, { Component } from 'react'
 
+import Home from './Home'
+import StrawModal from '../components/Modal'
 
-export default class Order extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      cart: null
-    }
-    this.addToCart = this.addToCart.bind(this);
-  }
 
-  async addToCart() {
+const OrderPage = (props) => {
+
+  async function addToCart() {
     console.log("start posting order...");
 
     let cartUrl = new URL('http://localhost:5000/api/cart');
@@ -95,9 +91,15 @@ export default class Order extends Component {
     // })();
   }
 
-  render() {
-    return (
-        <button type="submit" onClick={this.addToCart}>Create order</button>
-    )
-  }
+
+  return (
+    <>
+      <Home />
+      <StrawModal open />
+    </>
+  )
+
 }
+
+
+export default OrderPage

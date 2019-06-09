@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-import TimelineItem from '../TimelineItem/TimelineItem';
+import TimelineItem from './TimelineItem';
 
 var classNames = require('classnames');
 
